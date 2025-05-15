@@ -1,0 +1,38 @@
+title>Elemento Hidrogênio</title>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .elemento {
+      width: 150px;
+      height: 180px;
+      background-color: #e6f7ff;
+      border: 2px solid #007acc;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 15px;
+    }
+
+    .numero-atomico {
+      font-size: 18px;
+      font-weight: bold;
+      color: #007acc;
+    }
+
+    .simbolo {
+      font-size: 64px;
+      font-weight: bold;
+      color: #000;
+      margin: 10px 0;
+    }
+
+    .nome {
+      font-size: 18px;
+      color: #333;
+    }
