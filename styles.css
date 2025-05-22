@@ -1,0 +1,35 @@
+body {
+  Display: Flexible;
+  content: center;
+  margin: 20px;
+  background-color: #ffe684;
+  }
+  .periodic-table {
+  margin: auto 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff5f5;
+  text-align: center;
+  }
+  .periodic-table td {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  user-select:none;
+  }
+  .periodic-table td:hover {
+  filter: brightness(0.9);
+  width: 60px;
+  position: Fixed;
+  }
+  .periodic-table td div {
+  text-align: center;
+  font-size: 12px;
+  color: #000;
+  height: 45px;
+  }
+  .periodic-table all strong {
+  font-size: 23px;
+  cursor: pointer;
+  }
+  
