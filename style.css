@@ -1,38 +1,34 @@
-
-    body {
-      background-color: #f0f0f0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+body {
+    Display: Flex;
+    justify-content: center;
+    margin: 20px;
+    background-color: #ffe785;
     }
-
-    .elemento {
-      width: 150px;
-      height: 180px;
-      background-color: #e6f7ff;
-      border: 2px solid #007acc;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      padding: 15px;
+    .periodic-table {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fbfbfb;
+    text-align: center;
     }
-
-    .numero-atomico {
-      font-size: 18px;
-      font-weight: bold;
-      color: #007acc;
+    .periodic-table td {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    user-select:none;
     }
-
-    .simbolo {
-      font-size: 64px;
-      font-weight: bold;
-      color: #000;
-      margin: 10px 0;
+    .periodic-table td:hover {
+    filter: brightness (0.9);
+    width: 60px;
+    Position: Fixed;
     }
-
-    .nome {
-      font-size: 18px;
-      color: #333;
+    .periodic-table td div {
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+    height: 45px;
+    }
+    .periodic-table td strong {
+    font-size: 23px;
+    cursor: pointer;
     }
