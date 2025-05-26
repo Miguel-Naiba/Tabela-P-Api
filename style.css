@@ -1,35 +1,86 @@
-
 body {
-    Display: Flex;
-    justify-content: center;
-    margin: 20px;
-    background-color: #ffe785;
-    }
-    .periodic-table {
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #fbfbfb;
-    text-align: center;
-    }
-    .periodic-table td {
-    width: 60px;
-    height: 60px;
-    vertical-align: middle;
-    user-select:none;
-    }
-    .periodic-table td:hover {
-    filter: brightness (0.9);
-    width: 60px;
-    Position: Fixed;
-    }
-    .periodic-table td div {
-    text-align: center;
-    font-size: 12px;
-    color: #000;
-    height: 45px;
-    }
-    .periodic-table td strong {
-    font-size: 23px;
-    cursor: pointer;
-    }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  color: #333;
+}
+
+
+#tabela-periodica {
+  display: grid;
+  grid-template-rows: repeat(10, 50px); 
+  grid-template-columns: repeat(18, 50px);
+  gap: 3px; 
+  justify-content: center;
+  padding: 10px;
+}
+
+.elemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 3px; 
+  text-align: center;
+  font-size: 10px;
+  color: #000;
+  background-color: #ff0000;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.elemento:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.numero-atomico {
+  font-weight: bold;
+  font-size: 0.7em;
+  color: #555;
+}
+
+.simbolo {
+  font-size: 1.2em; 
+  font-weight: bold;
+  color: #333;
+}
+
+.nome {
+  font-size: 0.6em; 
+  color: #000000;
+}
+
+#info-elemento {
+  text-align: center;
+  padding: 10px;
+  width: 90%;
+  max-width: 600px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #333;
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+#info-elemento.visible {
+  display: block;
+}
+
+
