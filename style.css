@@ -2,14 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #180066;
 }
 
 h1 {
-  text-align: center;
-  margin: 20px 0;
+  margin-left: 300px;
   font-size: 2em;
-  color: #333;
+  color: #000000;
 }
 
 
@@ -18,7 +17,7 @@ h1 {
   grid-template-rows: repeat(10, 50px); 
   grid-template-columns: repeat(18, 50px);
   gap: 3px; 
-  justify-content: center;
+  justify-content: left;
   padding: 10px;
 }
 
@@ -27,32 +26,33 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ccc; 
-  border-radius: 5px; 
+  border: 3px solid #000000; 
+  border-radius: 0px; 
   padding: 3px; 
   text-align: center;
   font-size: 10px;
   color: #000;
-  background-color: #ff0000;
+  background-color: yellow;
   transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .elemento:hover {
-  transform: scale(1.05); 
+  transform: scale(1.55); 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .numero-atomico {
   font-weight: bold;
   font-size: 0.7em;
-  color: #555;
+  color: #000000;
 }
 
 .simbolo {
   font-size: 1.2em; 
   font-weight: bold;
-  color: #333;
+  color: #000000;
 }
 
 .nome {

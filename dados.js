@@ -2838,17 +2838,17 @@ const colecaoElementos = [
   
   colecaoElementos.forEach(e => {
     if (!e.corGrupo) {
-      if (e.grupo === 'metal alcalino') e.Grupo = '#FF5733';
-      else if (e.grupo === 'metal alcalino-terroso') e.Grupo = '#00C853'; 
-      else if (e.grupo === 'lantanídeo') e.Grupo = '#FFD700';
-      else if (e.grupo === 'actinoid') e.Grupo = '#FF33A8';
-      else if (e.grupo === 'metal de transição') e.Grupo = '#3380FF';
+      if (e.grupo === 'metal alcalino') e.corGrupo = '#FF5733';
+      else if (e.grupo === 'metal alcalino-terroso') e.corGrupo = '#00C853'; 
+      else if (e.grupo === 'lantanídeo') e.corGrupo = '#FFD700';
+      else if (e.grupo === 'actinoid') e.corGrupo = '#FF33A8';
+      else if (e.grupo === 'metal de transição') e.corGrupo = '#3380FF';
       else if (e.grupo === 'metal') e.corGrupo = '#AAAAAA';
-      else if (e.grupo === 'metalóide') e.Grupo = '#00FFD0';
-      else if (e.grupo === 'não metal') e.Grupo = '#00FF00';
-      else if (e.grupo === 'halogênio') e.Grupo = '#FF00FF';
-      else if (e.grupo === 'gás nobre') e.Grupo = '#fbfbfb'; 
-      else if (e.grupo === 'post-transition metal') e.Grupo = '#FF9800';
+      else if (e.grupo === 'metalóide') e.corGrupo = '#00FFD0';
+      else if (e.grupo === 'não metal') e.corGrupo = '#00FF00';
+      else if (e.grupo === 'halogênio') e.corGrupo = '#FF00FF';
+      else if (e.grupo === 'gás nobre') e.corGrupo = '#fbfbfb'; 
+      else if (e.grupo === 'post-transition metal') e.corGrupo = '#FF9800';
       else e.corGrupo = '#CCCCCC'; 
     }
   });
