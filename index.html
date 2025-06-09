@@ -5,13 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Periodic Table using JSON data</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="calc.css">
 </head>
 <body>
+  <div class="container">
+    <h1>Calculadora de Carga Elétrica</h1>
+    <form id="calcForm">
+        <label for="n">Número de elétrons (n):</label>
+        <input type="number" id="n" required>
+
+        <label for="q1">Carga q1 (C):</label>
+        <input type="number" id="q1" step="any" required>
+
+        <label for="q2">Carga q2 (C):</label>
+        <input type="number" id="q2" step="any" required>
+
+        <label for="d">Distância entre as cargas (m):</label>
+        <input type="number" id="d" step="any" required>
+
+        <button type="button" onclick="calcular()">Calcular</button>
+    </form>
+    <h2 id="resultado">Resultado</h2>
+    <div class="result" id="result"></div>
+
+    <div class="formulas">
+        <h2>Fórmulas Utilizadas</h2>
+        <p><strong>Carga elétrica (Q)=</strong> Q = n × e</p>
+        <p><strong>Força de interação (F)=</strong> F = (K × q1 × q2) / d²</p>
+        <p>Onde:</p>
+        <ul>
+            <li><strong>n:</strong> Número de elétrons</li>
+            <li><strong>e:</strong> Carga elementar (1.6 × 10⁻¹⁹ C)</li>
+            <li><strong>K:</strong> Constante de Coulomb (8.99 × 10⁹ N·m²/C²)</li>
+            <li><strong>q1, q2:</strong> Cargas elétricas (Coulombs)</li>
+            <li><strong>d:</strong> Distância entre as cargas (metros)</li>
+        </ul>
+    </div>
+</div>
   <h1>Tabela Periódica</h1>
   <div id="info-elemento"></div> 
   <div id="tabela-periodica"></div>
 
   <script src="./dados.js"></script>
   <script src="./script.js"></script>
+  <script src="./calc.js"></script>
+  </script>
 </body>
 </html>

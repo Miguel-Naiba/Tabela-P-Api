@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 450px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    justify-self: center;
+}
+
+input, button {
+    width: 96%;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #3f3f3f;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    width: 101%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #6d6d6d;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+#resultado{
+    display: block;
+    font-weight: bold;
+    color: #007BFF;
+    justify-self: center;
+}
+
+.formulas {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.formulas h2 {
+    color: #333;
+}
+
+.formulas p, .formulas ul {
+    color: #555;
+    font-size: 16px;
+}
+
+.formulas ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}

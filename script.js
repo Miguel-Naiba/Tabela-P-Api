@@ -61,4 +61,27 @@ function calcularCargaEletrica(event) {
   resultado.textContent = `A carga elétrica total é: ${cargaTotal.toExponential(2)} C`;
 }
 
-document.getElementById('form-calculadora').addEventListener('submit', calcularCargaEletrica);
+async function consultarAPI(simbolo) {
+  const url = `https://api.exemplo.com/elements/${simbolo}`;
+  const response = await fetch(url);
+  const data = await response.json();
+  return data;
+}
+async function calcularCarga(simbolo) {
+  const data = await consultarAPI(simbolo);
+  const numeroEletrons = data.atomic_number;
+  const cargaEletron = 1.602e-19; // Carga de um elétron em Coulombs
+  const carga = numeroEletrons * cargaEletron;
+  return carga;
+}
+
+function exibirResultado(resultado) {
+  document.getElementById('resultado').textContent = `Carga: ${resultado} C`;
+}
+
+document.getElementById('calcular').addEventListener('click', async () => {
+  const simbolo = document.getElementById('simbolo').value;
+  const resultado = await calcularCarga(simbolo);
+  exibirResultado(resultado);
+});
+  
