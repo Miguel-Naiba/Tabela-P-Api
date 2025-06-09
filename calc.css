@@ -5,15 +5,17 @@ body {
 }
 
 .container {
-    max-width: 450px;
+    max-width: 250px;
     margin: auto;
     background: #fff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
 h1 {
+
     text-align: center;
     color: #333;
 }

@@ -70,7 +70,7 @@ async function consultarAPI(simbolo) {
 async function calcularCarga(simbolo) {
   const data = await consultarAPI(simbolo);
   const numeroEletrons = data.atomic_number;
-  const cargaEletron = 1.602e-19; // Carga de um elétron em Coulombs
+  const cargaEletron = 1.602e-19; // Carga de coulumbus  bumero definido do elétron pelo forum mundial
   const carga = numeroEletrons * cargaEletron;
   return carga;
 }
